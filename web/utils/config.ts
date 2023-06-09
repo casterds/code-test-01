@@ -9,11 +9,11 @@ const config = {
 };
 
 if (
-  !config.TESTNET_CONTRACT_ADDRESS ||
-  !config.MAINNET_CONTRACT_ADDRESS ||
   !config.TESTNET_CHAIN_ID ||
   !config.MAINNET_CHAIN_ID
 ) {
+  alert(config.TESTNET_CHAIN_ID)
+  alert(config.MAINNET_CHAIN_ID)
   throw new Error('environment is not configured');
 }
 

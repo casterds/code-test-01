@@ -13,15 +13,15 @@ export function useAddNetwork() {
       network === 'mainnet' ? config.MAINNET_CHAIN_ID : config.TESTNET_CHAIN_ID;
 
     const mainnet = {
-      chainName: 'Metis Andromeda Mainnet',
-      rpcUrls: ['https://andromeda.metis.io/?owner=1088'],
-      blockExplorerUrls: ['https://andromeda-explorer.metis.io/'],
+      chainName: 'Celo Mainnet',
+      rpcUrls: ['https://baklava-forno.celo-testnet.org'],
+      blockExplorerUrls: ['https://baklava-blockscout.celo-testnet.org/'],
     };
 
     const testnet = {
-      chainName: 'Metis Stardust Testnet',
-      rpcUrls: ['https://stardust.metis.io/?owner=588'],
-      blockExplorerUrls: ['https://stardust-explorer.metis.io/'],
+      chainName: 'Baklava Testnet',
+      rpcUrls: ['https://baklava-forno.celo-testnet.org'],
+      blockExplorerUrls: ['https://baklava-blockscout.celo-testnet.org/'],
     };
 
     const metamask = await getMetamask();
@@ -31,8 +31,8 @@ export function useAddNetwork() {
         {
           chainId: '0x' + chainId.toString(16),
           nativeCurrency: {
-            name: 'Metis',
-            symbol: 'METIS',
+            name: 'Baklava Celo',
+            symbol: 'B-CELO',
             decimals: 18,
           },
           ...(network === 'mainnet' ? mainnet : testnet),

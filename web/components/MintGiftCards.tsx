@@ -25,6 +25,7 @@ import ChineseNewYearCard from 'components/cards/ChineseNewYearCard';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import GenericGiftCard from 'components/cards/GenericGiftCard';
 import CupidCard from 'components/cards/CupidCard';
+import ResolveNames from './ResolveNames';
 
 const giftCards = [GenericGiftCard, ChineseNewYearCard, CupidCard];
 
@@ -170,6 +171,7 @@ export default function MintGiftCard() {
                 onSubmit={handleSubmit(onMintGiftCard)}
               >
                 <RecipientTextField />
+                <ResolveNames/>
                 <TextField
                   {...materialRegister(register, 'amount')}
                   label="Amount"
@@ -181,6 +183,7 @@ export default function MintGiftCard() {
                   error={!!errors.amount}
                 />
                 <MintFee />
+               
                 <TextField
                   {...materialRegister(register, 'message')}
                   label="Message"

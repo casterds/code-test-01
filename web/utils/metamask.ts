@@ -1,7 +1,8 @@
 import detectEthereumProvider from '@metamask/detect-provider';
-import { ethers } from 'ethers';
+import { ethers,Signer } from 'ethers';
 import config from 'utils/config';
 import { useAccount } from 'store/account';
+
 
 /**
  * Gets metamask client.
@@ -20,6 +21,18 @@ export async function getEthers(): Promise<ethers.providers.Web3Provider | null>
   }
   return new ethers.providers.Web3Provider(metamask);
 }
+
+export async function getSigner() {
+  const eth = await getEthers();
+  if (!eth) {
+    return null;
+  }
+  const signer = eth.getSigner() as any;
+  return signer;
+}
+
+
+
 
 /**
  * Gets the contract client.
