@@ -5,7 +5,7 @@ type Props = {
 const navigation = [
   {
     name: "GitHub",
-    href: "https://github.com/isabellewei/emisianto",
+    href: "",
     icon: (props: Props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
