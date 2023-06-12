@@ -1,5 +1,5 @@
 import { Box, Button } from '@mui/material';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import MetamaskIcon from 'components/MetamaskIcon';
 import { useAsync } from 'react-use';
 import { getMetamask } from 'utils/metamask';
@@ -108,7 +108,5 @@ const [isDeregisterNumberModalOpen, setIsDeregisterNumberModalOpen] =
 }
 
 
-function useState(arg0: boolean): [any, any] {
-  throw new Error('Function not implemented.');
-}
+
 

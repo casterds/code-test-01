@@ -28,9 +28,9 @@ export default class WebBlsBlindingClient implements BlsBlindingClient {
     this.odisPubKey = Buffer.from(odisPubKey, 'base64')
   }
 
-  async init() {
-    await thresholdBls.init("/blind_threshold_bls_bg.wasm")
-  }
+  // async init() {
+  //   await thresholdBls.init("/blind_threshold_bls_bg.wasm")
+  // }
 
   async blindMessage(base64PhoneNumber: string, seed?: Buffer): Promise<string> {
     const userSeed = seed ?? randomBytes(32)

@@ -15,7 +15,7 @@ export default function Header() {
   const { network } = useCelo();
   const issuerKit = newKit(network.rpcUrl);
   const issuerAddress = issuerKit.web3.eth.accounts.privateKeyToAccount(
-    process.env.NEXT_PUBLIC_ISSUER_PRIVATE_KEY
+    process.env.NEXT_PUBLIC_ISSUER_PRIVATE_KEY as string
   ).address;
 
   return (
