@@ -1,5 +1,5 @@
 {
-  "manifestVersion": "3.2",
+  "manifestVersion": "3.2", 
   "admin": {
     "address": "0x13730a3404c2Ac4aFa3bc92c267603a2Ee298CAd",
     "txHash": "0x36bae9fc81739e79b214d4f3b9552f2fa870dcafbbdc6ad22bf4697fed5f5dce",
