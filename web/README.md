@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Getting Started 
 
 First, setup the environment variables by copying the `.env.example` to `.env.local` and providing appropriate values to them.
 
