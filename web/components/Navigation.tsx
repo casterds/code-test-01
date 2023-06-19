@@ -101,8 +101,8 @@ export default function Navigation({ children }: NavigationProps) {
             }}
           >
             <Select size="small" value={network} onChange={onNetworkChange}>
-              <MenuItem value="mainnet">Andromeda Mainnet</MenuItem>
-              <MenuItem value="testnet">Stardust Testnet</MenuItem>
+              <MenuItem value="mainnet">Celo Mainnet</MenuItem>
+              <MenuItem value="testnet">Baklava Testnet</MenuItem>
             </Select>
 
             <Button>

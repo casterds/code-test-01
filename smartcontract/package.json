@@ -1,5 +1,5 @@
 {
-  "name": "hardhat-project",
+  "name": "hardhat-project", 
   "private": true,
   "scripts": {
     "compile": "yarn hardhat compile",

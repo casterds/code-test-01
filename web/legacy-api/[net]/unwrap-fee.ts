@@ -1,4 +1,4 @@
-import { withSentry } from '@sentry/nextjs';
+import { withSentry } from '@sentry/nextjs'; 
 import { ethers } from 'ethers';
 import { NextApiRequest, NextApiResponse } from 'next';
 import config from 'utils/config';

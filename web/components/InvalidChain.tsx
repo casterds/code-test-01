@@ -18,7 +18,7 @@ export default function InvalidChain() {
   const onSwitch = useSwitchNetwork();
 
   const networkName =
-    network === 'mainnet' ? 'Andromeda Mainnet' : 'Stardust Testnet';
+    network === 'mainnet' ? 'Celo Mainnet' : 'Baklava Testnet';
 
   return (
     <Container
@@ -32,12 +32,12 @@ export default function InvalidChain() {
     >
       <MdSwitchRight size={80} />
       <Typography textAlign="center">
-        You are not connected to Metis {networkName}.
+        You are not connected to  {networkName}.
       </Typography>
 
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} sx={{ mt: 4 }}>
         <Button variant="outlined" onClick={onAddNetwork}>
-          Add Metis {networkName}
+          Add  {networkName}
         </Button>
         <Button variant="contained" onClick={onSwitch}>
           Switch Network
@@ -49,8 +49,8 @@ export default function InvalidChain() {
         sx={{ p: 3, mt: 4, maxWidth: 500, bgcolor: 'grey.50' }}
       >
         <Typography variant="body2" textAlign="center">
-          If you have not added Metis {networkName} to your Metamask, you can do
-          so by clicking on <b>Add Metis {networkName}</b> button.
+          If you have not added  {networkName} to your Metamask, you can do
+          so by clicking on <b>Add  {networkName}</b> button.
         </Typography>
         <Typography variant="body2" textAlign="center" sx={{ mt: 2 }}>
           Or you may choose to add the network on{' '}
